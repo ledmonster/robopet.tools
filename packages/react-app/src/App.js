@@ -2,12 +2,10 @@ import { useQuery } from "@apollo/react-hooks";
 import React, { useEffect, useState } from "react";
 
 import { Body, Button, Header } from "./components";
-import { RobotosList } from "./components/robotos"
 import useWeb3Modal from "./hooks/useWeb3Modal";
 
 import GET_TRANSFERS from "./graphql/subgraph";
 import { RobopetsList } from "./components/robopets";
-import { HipposList } from "./components/hippos";
 
 import styled from "styled-components";
 
@@ -86,12 +84,8 @@ function App() {
       </Header>
       <Body>
       <div>
-        <h1>My Robotos Family</h1>
+        <h1>Robopet Tools</h1>
       </div>
-        <AssetGroup>
-          <RobotosList />
-          {/* <HipposList /> */}
-        </AssetGroup>
         <AssetGroup>
           <RobopetsList />
         </AssetGroup>
